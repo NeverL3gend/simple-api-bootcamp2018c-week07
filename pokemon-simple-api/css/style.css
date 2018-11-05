@@ -1,0 +1,118 @@
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("https://www.wallpaperup.com/uploads/wallpapers/2014/01/24/236679/c7f7d14b9dc759d41fad88f53d1580b6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: 'Anton', sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.leftSec{
+  width: 33.3333%;
+  height: 150px;
+}
+
+form {
+  width: 33.3333%;
+  height: 150px;
+}
+
+section {
+  height: 500px;
+  width: 17%;
+  margin-top: -16%;
+  margin-left: 51%;
+}
+
+
+img {
+  width: 100%;
+}
+
+span img{
+  width: 50%;
+}
+
+.buttonSec {
+  color: #fff !important;
+  text-transform: uppercase;
+  background: #400a58;
+  padding: 20px;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+}
+
+.buttonSec:hover {
+  background: #400a58#416;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.4s ease 0s;
+}
+
+
+.sideOne {
+  width: 20%;
+  height: 200px;
+  margin-right: 80%;
+}
+
+.sideOne {
+  background-image: url("https://media.giphy.com/media/PCI5p2XMf6Gwo/giphy.gif");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.sideTwo {
+  width: 20%;
+  height: 200px;
+  margin-left: 80%;
+}
+
+
+.sideTwo {
+  background-image: url("https://cdna.artstation.com/p/assets/images/images/004/783/174/original/wunkolo-tumblr-oatfjp0ro91qbx12bo1-540.gif?1486236977");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
